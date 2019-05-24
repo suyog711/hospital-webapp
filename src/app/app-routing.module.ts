@@ -5,7 +5,7 @@ import { LoginComponent } from './auth/login/login.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/auth/login',
+    redirectTo: '/hospital/add',
     pathMatch: 'full'
   },
   {
@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'hospital',
-    loadChildren:'./hospital/hospital.module#HospitalModule'
+    loadChildren: './hospital/hospital.module#HospitalModule'
   }
 ];
 

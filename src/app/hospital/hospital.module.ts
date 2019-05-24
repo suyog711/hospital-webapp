@@ -6,14 +6,18 @@ import { FormsModule } from '@angular/forms';
 import { ListHospitalComponent } from './list-hospital/list-hospital.component';
 import { UpdateHospitalComponent } from './update-hospital/update-hospital.component';
 import { HospitalService } from './service/hospital.service';
+import { SharedModule } from '../shared/shared.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AddHospitalComponent, ListHospitalComponent, UpdateHospitalComponent],
   imports: [
     CommonModule,
     HospitalRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    HttpClientModule
   ],
-  providers:[HospitalService]
+  providers: [HospitalService]
 })
 export class HospitalModule { }

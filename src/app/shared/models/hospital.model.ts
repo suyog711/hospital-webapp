@@ -5,18 +5,18 @@ export class Hospital {
     name: string;
     phone1: string;
     phone2: Number;
-    emergencyNumber: String
-    email: String
-    website: String
-    description: String
-    verificationNumber: String
-    verificationType: String
-    address: String
-    address2: String
-    city: String
-    state: String
-    departments: Department[]
-    active: Boolean
+    emergencyNumber: String;
+    email: String;
+    website: String;
+    description: String;
+    verificationNumber: String;
+    verificationType: String;
+    address: String;
+    address2: String;
+    city: String;
+    state: String;
+    departments: Array<Department>;
+    active: Boolean;
 
     constructor(details: any) {
         this.id = details.id || null;

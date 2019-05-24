@@ -1,13 +1,13 @@
-<table *ngIf="!loading" class="table table-bordered">
+<table class="table table-bordered">
   <thead>
     <th>S.N</th>
     <th>Name</th>
     <th>Phone1</th>
-    <th>emergencyNumber</th>
-    <th>verificationNumber</th>
-    <th>verificationType</th>
+    <th>Email</th>
+    <th>Verification Number</th>
+    <th>Verification Type</th>
     <th>Address</th>
-    <th>City</th>
+    <th>Active</th>
     <th>Action</th>
   </thead>
   <tbody>
@@ -15,14 +15,14 @@
       <td>{{i +1}}</td>
       <td>{{hosp.name}}</td>
       <td>{{hosp.phone1}}</td>
-      <td>{{hosp.emergencyNumber}}</td>
+      <td>{{hosp.email}}</td>
       <td>{{hosp.verificationNumber}}</td>
-      <td>{{hosp.verificationTypes}}</td>
+      <td>{{hosp.verificationType}}</td>
       <td>{{hosp.address}}</td>
-      <td>{{hosp.city}}</td>
+      <td>{{hosp.active}}</td>
       <td>
-        <button routerLink="/hospital/update/{{hosp.id}}" class="btn btn-info">edit</button>
-        <button (click)="" class="btn btn-danger">Make Inactive</button>
+        <button class="btn btn-info">edit</button>
+        <button class="btn btn-danger">Make Inactive</button>
       </td>
 
     </tr>
