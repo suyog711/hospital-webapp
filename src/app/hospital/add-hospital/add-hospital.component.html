@@ -1,7 +1,40 @@
-<div class = "container">
+<div>
   <h1>Create new hospital</h1>
   <form class="form-group" #addHospitalForm="ngForm">
     <label for="name">Name</label>
-    <input class = "form-control" type="text" name="name" placholder="Name">
+    <input class="form-control" type="text" name="name" placholder="Name" [(ngModel)]="hospital.name">
+    <label for="phone1">Phone number 1</label>
+    <input class="form-control" type="text" name="phone1" placholder="Phone number" [(ngModel)]="hospital.phone1">
+    <label for="phone2">Phone number 2</label>
+    <input class="form-control" type="text" name="phone2" placholder="Phone number" [(ngModel)]="hospital.phone2">
+    <label for="emergencyNumber">Emergency Number</label>
+    <input class="form-control" type="text" name="emergencyNumber" placholder="Emergency number"
+      [(ngModel)]="hospital.emergencyNumber">
+    <label for="email">Email</label>
+    <input class="form-control" type="text" name="email" placholder="Email" [(ngModel)]="hospital.email">
+    <label for="website">Website</label>
+    <input class="form-control" type="text" name="website" placholder="Website" [(ngModel)]="hospital.website">
+    <label for="description">Description</label>
+    <input class="form-control" type="text" name="description" placholder="Description"
+      [(ngModel)]="hospital.description">
+    <label for="verificationNumber">Verification Number</label>
+    <input class="form-control" type="text" name="verificationNumber" placholder="Verification Number"
+      [(ngModel)]="hospital.verificationNumber">
+    <label for="verificationType">Verification Type</label>
+    <input class="form-control" type="text" name="verificationType" placholder="Verification Type"
+      [(ngModel)]="hospital.verificationType">
+    <label for="address">Address 1</label>
+    <input class="form-control" type="text" name="address" placholder="Address 1" [(ngModel)]="hospital.address">
+    <label for="address2">Address 2</label>
+    <input class="form-control" type="text" name="address2" placholder="Address 2" [(ngModel)]="hospital.address2">
+    <label for="city">City</label>
+    <input class="form-control" type="text" name="city" placholder="City" [(ngModel)]="hospital.city">
+    <label for="state">State</label>
+    <input class="form-control" type="text" name="state" placholder="State" [(ngModel)]="hospital.state">
+    <label for="departments">Departments</label>
+    <input class="form-control" type="text" name="departments" placholder="Departments"
+      [(ngModel)]="hospital.departments">
+    <br>
+    <button class="btn btn-primary" (click)="submit()">Create</button>
   </form>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Hospital } from 'src/app/shared/models/hospital.model';
 
 @Component({
   selector: 'app-add-hospital',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-hospital.component.css']
 })
 export class AddHospitalComponent implements OnInit {
-
-  constructor() { }
+  hospital;
+  constructor() {
+    this.hospital = new Hospital({})
+  }
 
   ngOnInit() {
   }
-
+  submit() {
+    console.log(this.hospital);
+  }
 }
